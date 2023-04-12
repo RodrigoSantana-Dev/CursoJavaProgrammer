@@ -35,7 +35,7 @@ import servicos.Calculos;
 		 makita.setMarca("Digite a marca");
 		 makita.setPrecoDeCompra(300.0);
 		 makita.setPrecoDeVenda(450.0);
-		 makita.setLucro(calc.calcularlucro(0, 0));
+		 makita.setLucro(Cal.calcularlucro());
 		 
 		return makita; }
 		
