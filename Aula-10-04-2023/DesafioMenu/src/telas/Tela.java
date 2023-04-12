@@ -13,23 +13,26 @@ import servicos.Calculos;
 		Makita makita = new Makita();
 	 
 		public void menu() {
-			int opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para Furadeira e 2 para Makita:"));
+			int opcao; 
+			Boolean sair = true;
+			do {
+				opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para Furadeira e 2 para Makita:"));
+				 
+			     if(opcao == 1) {
+				    apresentarFuradeira(cadastroFuradeira());
+			     }
 
-
-			if(opcao == 1) {
-				apresentarFuradeira(cadastroFuradeira()); // Ele executa as atividades da Furadeira
-			}
-
-			if(opcao == 2) {
-				apresentarMakita(cadastroMakita());
-			}
-
-			
+		      	if(opcao == 2) {
+				   apresentarMakita(cadastroMakita());
+			    }
+			    if(opcao == 3) {
+			       System.exit(0);
+			       sair = false;
+			    }
+		
+			}while(sair);
+		
 		}
-		
-		
-		
-		
 		public  Furadeira cadastroFuradeira() {
 		
 			Furadeira furadeira = new Furadeira();
