@@ -11,9 +11,11 @@ public class Principal {
 
 	Tela tela = new Tela();
 	tela.menu();
+	
 		
  
 		
      }
 
 }
+

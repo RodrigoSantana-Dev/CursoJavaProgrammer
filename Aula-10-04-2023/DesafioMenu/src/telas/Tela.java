@@ -11,7 +11,10 @@ import servicos.Calculos;
 		Calculos calc = new Calculos();
 		Furadeira furadeira = new Furadeira();
 		Makita makita = new Makita();
-	 
+		
+		
+	 // Ultilizaçao do Metodo Boolean  
+		
 		public void menu() {
 			int opcao; 
 			Boolean sair = true;
@@ -46,7 +49,6 @@ import servicos.Calculos;
 		
 			return cadastroFuradeira ();
 		}
-	
 	
 			public void apresentarFuradeira(Furadeira furadeiraParametro) {
 			JOptionPane.showMessageDialog(null, "O codigo da furadeira é: " + furadeiraParametro.getCodigo());
